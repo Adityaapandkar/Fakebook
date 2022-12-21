@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      FakeBook - Personal Social Media Website(No Inspirations from here)
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <h2 class="log">FakeBook</h2>
+        <div class="search-bar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="search-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+            />
+          </svg>
+          <input
+            type="search"
+            placeholder="search for creators,people and pages"
+          />
+        </div>
+        <div class="create">
+          <label class="btn btn-primary" for="create-post">Create</label>
+          <div class="profile-picture">
+            <img src="images/profile-1.jpeg" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="left">
+          <a class="profile">
+            <div class="profile-picture">
+              <img src="images/profile-1.jpeg" />
+            </div>
+            <div class="handle">
+              <h4>Aditya Apandkar</h4>
+              <p class="text-muted">@aditya.apandkar</p>
+            </div>
+          </a>
+          <div class="sidebar">
+            <a class="menu-item active">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="home"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                  />
+                </svg>
+              </span>
+              <h3>Home</h3>
+            </a>
+            <a class="menu-item">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="explore"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
+                  />
+                </svg>
+              </span>
+              <h3>Explore</h3>
+            </a>
+            <a class="menu-item" id="notifications">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="notification"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                  />
+                </svg>
+              </span>
+              <h3>Notifications</h3>
+              <div class="notifications-popup">
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile-2.jpeg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Jay Samberkar</b> accepted your friend request
+                    <small class="text-muted">2 DAYS AGO</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile-3.jpeg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Abhigyan Bafna</b> commented on your post
+                    <small class="text-muted">1 HOUR AGO</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile-4.jpeg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Huzefa Dohadwala</b> and <b>169 others</b> liked your
+                    post
+                    <small class="text-muted">40 MINUTES AGO</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile-5.jpeg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Kedar Karbele</b> commented on a post you're tagged in
+                    <small class="text-muted">2 DAYS AGO</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile-6.jpeg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Chaitanya Deshpande</b> commented on your post
+                    <small class="text-muted">1 HOUR AGO</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="images/profile-7.jpeg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Atharva Dhamne</b> commented on your post
+                    <small class="text-muted">1 HOUR AGO</small>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="menu-item" id="messages-notifications">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="message"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                  />
+                </svg>
+              </span>
+              <h3>Messages</h3>
+            </a>
+            <a class="menu-item">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="bookmark"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+                  />
+                </svg>
+              </span>
+              <h3>Bookmarks</h3>
+            </a>
+            <a class="menu-item">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="analytic"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
+                  />
+                </svg>
+              </span>
+              <h3>Analytics</h3>
+            </a>
+            <a class="menu-item">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="theme"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"
+                  />
+                </svg>
+              </span>
+              <h3>Themes</h3>
+            </a>
+            <a class="menu-item">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="setting"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </span>
+              <h3>Settings</h3>
+            </a>
+          </div>
+          <label for="create-post" class="btn btn-primary">Create Post</label>
+        </div>
+        <div class="middle">
+          <div class="stories">
+            <div class="story">
+              <div class="profile-picture">
+                <img src="images/profile-1.jpeg" />
+              </div>
+              <p class="name">Your Story</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="images/profile-9.jpeg" />
+              </div>
+              <p class="name">Laksh Doshi</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="images/profile-8.jpeg" />
+              </div>
+              <p class="name">Darshil Marathe</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="images/profile-7.jpeg" />
+              </div>
+              <p class="name">Atharva Dhamne</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="images/profile-6.jpeg" />
+              </div>
+              <p class="name">Chaitanya Deshpande</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="images/profile-5.jpeg" />
+              </div>
+              <p class="name">Kedar Karbele</p>
+            </div>
+          </div>
+          <form class="create-post">
+            <div class="profile-picture">
+              <img src="images/profile-1.jpeg" />
+            </div>
+            <input
+              type="text"
+              placeholder="What's on your mind, Aditya?"
+              id="create-post"
+            />
+            <input type="submit" value="Post" class="btn btn-primary" />
+          </form>
+          <div class="feeds">
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="images/profile-2.jpeg" />
+                  </div>
+                  <div class="info">
+                    <h3>Jay Samberkar</h3>
+                    <small>Mulund, 10 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="elipsis"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="images/feed-1.jpeg" />
+              </div>
+              <div class="action-button">
+                <div class="interaction-buttons">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="like"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="comment"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="share"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="bookmark">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="bookmarks"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span>
+                  <img src="images/profile-3.jpeg" />
+                </span>
+                <span>
+                  <img src="images/profile-4.jpeg" />
+                </span>
+                <span>
+                  <img src="images/profile-5.jpeg" />
+                </span>
+                <p>Liked by <b>Abhigyan Bafna</b> and <b>123 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>Abhigyan Bafna</b> Lorem ipsum dolor sit amet consectetur
+                  adipisicing. <span class="hash-tag">#centralwale</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 22 comments</div>
+            </div>
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="images/profile-3.jpeg" />
+                  </div>
+                  <div class="info">
+                    <h3>Abhigyan Bafna</h3>
+                    <small>Byculla, 50 MINUTES AGO</small>
+                  </div>
+                  
+                </div>
+                <span class="edit">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="elipsis"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                      />
+                    </svg>
+                  </span>
+              </div>
+              <div class="photo">
+                <img src="images/feed-2.jpeg" />
+              </div>
+              <div class="action-button">
+                <div class="interaction-buttons">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="like"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="comment"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="share"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="bookmark">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="bookmarks"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span>
+                  <img src="images/profile-4.jpeg" />
+                </span>
+                <span>
+                  <img src="images/profile-5.jpeg" />
+                </span>
+                <span>
+                  <img src="images/profile-6.jpeg" />
+                </span>
+                <p>Liked by <b>Huzefa Dohadwala</b> and <b>321 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>Abhigyan Bafna</b> Lorem ipsum dolor sit amet consectetur
+                  adipisicing. <span class="hash-tag">#BycullakaBrownlee</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 44 comments</div>
+            </div>
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="images/profile-4.jpeg" />
+                  </div>
+                  <div class="info">
+                    <h3>Huzefa Dohadwala</h3>
+                    <small>Kandivali, 1 HOUR AGO</small>
+                  </div>
+                  
+                </div>
+                <span class="edit">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="elipsis"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                      />
+                    </svg>
+                  </span>
+              </div>
+              <div class="photo">
+                <img src="images/feed-3.jpeg" />
+              </div>
+              <div class="action-button">
+                <div class="interaction-buttons">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="like"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="comment"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="share"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="bookmark">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="bookmarks"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span>
+                  <img src="images/profile-5.jpeg" />
+                </span>
+                <span>
+                  <img src="images/profile-6.jpeg" />
+                </span>
+                <span>
+                  <img src="images/profile-7.jpeg" />
+                </span>
+                <p>Liked by <b>Kedar Karbele</b> and <b>269 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>Huzefa Dohadwala</b> Lorem ipsum dolor sit amet consectetur
+                  adipisicing. <span class="hash-tag">#AmeerParty</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 69 comments</div>
+            </div>
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="images/profile-5.jpeg" />
+                  </div>
+                  <div class="info">
+                    <h3>Kedar Karbele</h3>
+                    <small>Borivali, 5 HOURS AGO</small>
+                  </div>
+                  
+                </div>
+                <span class="edit">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="elipsis"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                      />
+                    </svg>
+                  </span>
+              </div>
+              <div class="photo">
+                <img src="images/feed-4.jpeg" />
+              </div>
+              <div class="action-button">
+                <div class="interaction-buttons">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="like"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="comment"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="share"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="bookmark">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="bookmarks"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span>
+                  <img src="images/profile-6.jpeg" />
+                </span>
+                <span>
+                  <img src="images/profile-7.jpeg" />
+                </span>
+                <span>
+                  <img src="images/profile-8.jpeg" />
+                </span>
+                <p>Liked by <b>Chaitanya Deshpande</b> and <b>666</b> others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>Kedar Karbele</b> Do din rukja, mummy baal kaatne wali hai <span class="hash-tag">#RohitIsLob</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 33 comments</div>
+            </div>
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="images/profile-6.jpeg" />
+                  </div>
+                  <div class="info">
+                    <h3>Chaitanya Deshpande</h3>
+                    <small>Kurla, 1 DAY AGO</small>
+                  </div>
+                  
+                </div>
+                <span class="edit">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="elipsis"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                      />
+                    </svg>
+                  </span>
+              </div>
+              <div class="photo">
+                <img src="images/feed-5.jpeg" />
+              </div>
+              <div class="action-button">
+                <div class="interaction-buttons">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="like"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="comment"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="share"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="bookmark">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="bookmarks"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span>
+                  <img src="images/profile-7.jpeg" />
+                </span>
+                <span>
+                  <img src="images/profile-8.jpeg" />
+                </span>
+                <span>
+                  <img src="images/profile-9.jpeg" />
+                </span>
+                <p>Liked by <b>Atharva Dhamne</b> and <b>7 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>Chaitanya Deshpande</b> OYEEEE BALLE BALLE <span class="hash-tag">#siiuuuu</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 2 comments</div>
+            </div>
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="images/profile-7.jpeg" />
+                  </div>
+                  <div class="info">
+                    <h3>Atharva Dhamne</h3>
+                    <small>Kandivali, 2 DAYS AGO</small>
+                  </div>
+                  
+                </div>
+                <span class="edit">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="elipsis"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                      />
+                    </svg>
+                  </span>
+              </div>
+              <div class="photo">
+                <img src="images/feed-6.jpeg" />
+              </div>
+              <div class="action-button">
+                <div class="interaction-buttons">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="like"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="comment"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="share"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="bookmark">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="bookmarks"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span>
+                  <img src="images/profile-8.jpeg" />
+                </span>
+                <span>
+                  <img src="images/profile-9.jpeg" />
+                </span>
+                <span>
+                  <img src="images/profile-2.jpeg" />
+                </span>
+                <p>Liked by <b>Darshil Marathe</b> and <b>333 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>Atharva Dhamne</b> Lorem ipsum dolor sit amet consectetur
+                  adipisicing. <span class="hash-tag">#MahavirNagarAaja</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 77 comments</div>
+            </div>
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="images/profile-8.jpeg" />
+                  </div>
+                  <div class="info">
+                    <h3>Darshil Marathe</h3>
+                    <small>Dahanu, 4 DAYS AGO</small>
+                  </div>
+                  
+                </div>
+                <span class="edit">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="elipsis"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                      />
+                    </svg>
+                  </span>
+              </div>
+              <div class="photo">
+                <img src="images/feed-7.jpeg" />
+              </div>
+              <div class="action-button">
+                <div class="interaction-buttons">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="like"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="comment"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="share"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="bookmark">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="bookmarks"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span>
+                  <img src="images/profile-9.jpeg" />
+                </span>
+                <span>
+                  <img src="images/profile-2.jpeg" />
+                </span>
+                <span>
+                  <img src="images/profile-3.jpeg" />
+                </span>
+                <p>Liked by <b>Laksh Doshi</b> and <b>123 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>Darshil Marathe</b> Lorem ipsum dolor sit amet consectetur
+                  adipisicing. <span class="hash-tag">#IaintLying</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 22 comments</div>
+            </div>
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="images/profile-9.jpeg" />
+                  </div>
+                  <div class="info">
+                    <h3>Laksh Doshi</h3>
+                    <small>Byculla, 4 DAYS AGO</small>
+                  </div>
+                  
+                </div>
+                <span class="edit">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="elipsis"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                      />
+                    </svg>
+                  </span>
+              </div>
+              <div class="photo">
+                <img src="images/feed-8.jpeg" />
+              </div>
+              <div class="action-button">
+                <div class="interaction-buttons">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="like"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="comment"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"
+                      />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="share"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="bookmark">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="bookmarks"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="liked-by">
+                <span>
+                  <img src="images/profile-5.jpeg" />
+                </span>
+                <span>
+                  <img src="images/profile-6.jpeg" />
+                </span>
+                <span>
+                  <img src="images/profile-7.jpeg" />
+                </span>
+                <p>Liked by <b>Kedar Karbele</b> and <b>123 others</b></p>
+              </div>
+              <div class="caption">
+                <p>
+                  <b>Laksh Doshi</b> Lorem ipsum dolor sit amet consectetur
+                  adipisicing. <span class="hash-tag">#LetsNacho</span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 22 comments</div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="messages">
+            <div class="heading">
+              <h4>Messages</h4>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="edit" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+              </svg>
+              </span>
+            </div>
+            <div class="search-bar">
+              <span>
+                <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="search-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+            />
+                </svg>
+              </span>
+              <input type="search" placeholder="Search messages" id="message-search">
+            </div>
+            <div class="category">
+              <h6 class="active">Primary</h6>
+              <h6>General</h6>
+              <h6 class="message-requests">Requests(2)</h6>
+            </div>
+            <div class="message">
+              <div class="profile-picture">
+                <img src="images/profile-9.jpeg">
+              </div>
+              <div class="message-body">
+                <h5>Laksh Doshi</h5>
+                <p class="text-muted">App Dev chalu kar yarr</p>
+              </div>
+            </div>
+            <div class="message">
+              <div class="profile-picture">
+                <img src="images/profile-8.jpeg">
+              </div>
+              <div class="message-body">
+                <h5>Darshil Marathe</h5>
+                <p class="text-bold">2 new messages</p>
+              </div>
+            </div>
+            <div class="message">
+              <div class="profile-picture">
+                <img src="images/profile-7.jpeg">
+              </div>
+              <div class="message-body">
+                <h5>Atharva Dhamne</h5>
+                <p class="text-muted">Mahavir Nagar Aaja</p>
+              </div>
+            </div>
+          </div>
+          <div class="friend-requests">
+            <h4>Requests</h4>
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="images/profile-8.jpeg">
+                </div>
+                <div>
+                  <h5>Darshil Marathe</h5>
+                  <p class="text-muted">
+                    7 mutual friends
+                  </p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">
+                  Accept
+                </button>
+                <button class="btn">
+                  Decline
+                </button>
+              </div>
+            </div>
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="images/profile-7.jpeg">
+                </div>
+                <div>
+                  <h5>Atharva Dhamne</h5>
+                  <p class="text-muted">
+                    7 mutual friends
+                  </p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">
+                  Accept
+                </button>
+                <button class="btn">
+                  Decline
+                </button>
+              </div>
+            </div>
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="images/profile-5.jpeg">
+                </div>
+                <div>
+                  <h5>Kedar Karbele</h5>
+                  <p class="text-muted">
+                    7 mutual friends
+                  </p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">
+                  Accept
+                </button>
+                <button class="btn">
+                  Decline
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="customize-theme">
+      <div class="card">
+        <h2>Customize your view</h2>
+        <p class="text-muted">Manage your font size, colour and background</p>
+        <div class="font-size">
+          <h4>Font Size</h4>
+          <div>
+            <h6>Aa</h6>
+          <div class="choose-size">
+            <span class="font-size-1"></span>
+            <span class="font-size-2"></span>
+            <span class="font-size-3"></span>
+            <span class="font-size-4"></span>
+            <span class="font-size-5"></span>
+          </div>
+          <h3>Aa</h3>  
+          </div>
+        </div>
+        <div class="color">
+          <h4>Color</h4>
+          <div class="choose-color">
+          <span class="color-1 active"></span>
+          <span class="color-2"></span>
+          <span class="color-3"></span>
+          <span class="color-4"></span>
+          <span class="color-5"></span>
+          </div>
+        </div>
+        <div class="background">
+          <h4>Background</h4>
+          <div class="choose-bg">
+            <div class="bg-1">
+              <span></span>
+              <h5 for="bg-1">Light</h5>
+            </div>
+            <div class="bg-2">
+              <span></span>
+              <h5 for="bg-2">Dim</h5>
+            </div>
+            <div class="bg-3">
+              <span></span>
+              <h5 for="bg-3">Lights Out</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
