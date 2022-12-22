@@ -305,27 +305,27 @@ main .container .left .profile {
 }
 
 .middle .stories .story:nth-child(1) {
-  background: url("/images/story-1.jpeg") no-repeat center center/cover;
+  background: url(/images/story-1.jpeg) no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(2) {
-  background: url("/images/story-2.jpeg") no-repeat center center/cover;
+  background: url(/images/story-2.jpeg) no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(3) {
-  background: url("/images/story-3.jpeg") no-repeat center center/cover;
+  background: url(/images/story-3.jpeg) no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(4) {
-  background: url("/images/story-4.jpeg") no-repeat center center/cover;
+  background: url(/images/story-4.jpeg) no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(5) {
-  background: url("/images/story-5.jpeg") no-repeat center center/cover;
+  background: url(/images/story-5.jpeg) no-repeat center center/cover;
 }
 
 .middle .stories .story:nth-child(6) {
-  background: url("/images/story-6.jpeg") no-repeat center center/cover;
+  background: url(/images/story-6.jpeg) no-repeat center center/cover;
 }
 
 .middle .story .profile-picture {
