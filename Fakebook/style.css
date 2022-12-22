@@ -40,6 +40,10 @@ body {
   overflow: auto;
 }
 
+.container .log {
+  color: var(--color-primary);
+}
+
 .search-icon {
   width: 12px;
   height: 12px;
