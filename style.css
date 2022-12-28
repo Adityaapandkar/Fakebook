@@ -164,7 +164,7 @@ main .container {
 main .container .left {
   height: max-content;
   position: relative;
-  /*top: var(--sticky-top-left);*/
+  /* /top: var(--sticky-top-left);/ */
 }
 
 main .container .left .profile {
